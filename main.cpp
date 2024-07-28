@@ -164,17 +164,17 @@ int main(int argc, char **argv) {
 
         std::cout << '\n' << "Times (in ns):";
         for (auto &t : times)
-          std::cout << ' ' << t;
+          std::cout << std::fixed << ' ' << t;
 
         std::cout << '\n' << "Preprocess Times (in ns):";
         for (auto &t : preprocess_times)
-          std::cout << ' ' << t;
+          std::cout << std::fixed << ' ' << t;
 
         std::cout << '\n' << "Computation Times (in ns):";
         for (auto &t : computation_times)
-          std::cout << ' ' << t;
+          std::cout << std::fixed << ' ' << t;
 
-        std::cout << '\n'
+        std::cout << std::fixed << '\n'
                   << "Average time: " << total_time << "ns" << '\n'
                   << "Average preprocess time: " << total_preprocess_time
                   << "ns" << '\n'
@@ -224,17 +224,17 @@ int main(int argc, char **argv) {
 
         std::cout << '\n' << "Times (in ns):";
         for (auto &t : times)
-          std::cout << ' ' << t;
+          std::cout << std::fixed << ' ' << t;
 
         std::cout << '\n' << "Preprocess Times (in ns):";
         for (auto &t : preprocess_times)
-          std::cout << ' ' << t;
+          std::cout << std::fixed << ' ' << t;
 
         std::cout << '\n' << "Computation Times (in ns):";
         for (auto &t : computation_times)
-          std::cout << ' ' << t;
+          std::cout << std::fixed << ' ' << t;
 
-        std::cout << '\n'
+        std::cout << std::fixed << '\n'
                   << "Average time: " << total_time << "ns" << '\n'
                   << "Average preprocess time: " << total_preprocess_time
                   << "ns" << '\n'
@@ -266,8 +266,8 @@ int main(int argc, char **argv) {
 
         std::cout << '\n' << "Times (in ns):";
         for (auto &t : times)
-          std::cout << ' ' << t;
-        std::cout << '\n' << "Average time: " << total_time << "ns" << '\n';
+          std::cout << std::fixed << ' ' << t;
+        std::cout << std::fixed << '\n' << "Average time: " << total_time << "ns" << '\n';
         for (auto const &p : paths) {
           std::cout << '\n' << "Path:";
           for (size_t i = 1; i < p.size(); ++i)
